@@ -1,8 +1,8 @@
 /***** BASE STYLES *****/
 
 body {
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #2b2b2b;
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 16px;
 }
 
 /***** GRID *****/
@@ -23,162 +23,279 @@ body {
 	float: left;
 }
 
+
 /***** HEADER STYLING *****/
 
 header {
-    height: 800px;
-    background: url('../img/hero.png');
-    background-size: cover;
-    background-position: center;
+	height: 75px;
+	background: #131313;
+	overflow: auto;
 }
 
-header h1 { 
-    font-family: 'Lora', serif;
-    font-size: 30px;
-    color: #bbc085;
-    padding: 65px 0 65px 25px;
-    margin: 0 auto;
+header h1 {
+	font-family: 'Libre Franklin', sans-serif;
+	display: inline-block;
+	margin: 0 auto;
+	color: #f2f2f2;
+	padding: 18px 0 0 18px;
+	text-shadow: rgba(0, 230, 230, 0.4) 5px 0 0, rgba(230, 0, 115, 0.4) -5px 0 0;
 }
 
 nav {
 	float: right;
-	padding: 75px 25px;
+	display: inline-block;
+	margin: 28px 18px 0 0;
+
+}
+
+nav ul {
+	display: inline-block;
+	margin: 0 auto;
 }
 
 nav ul li {
 	display: inline-block;
+	margin: 0 auto;
 }
 
 nav ul li a {
-	text-transform: uppercase;
 	text-decoration: none;
-	font-size: 18px;
-	color: #828282;
-	padding-left: 80px;
+	padding-left: 55px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #FFFFFF;
+	text-shadow: rgba(0, 230, 230, 0.4) 4px 0 0
 }
 
-header h2 {
-    width: 1000px;
-    clear: both;
-    font-family: 'Lora', sans-serif;
-    font-size: 72px;
-    line-height: 80px;
-    color: #9b9b9b;
-    padding: 20px 0 20px 25px;
+nav ul li a span {
+	text-shadow: rgba(230, 0, 115, 0.4) -4px 0 0;
 }
 
-header h2 span {
-    color: #2b2b2b;
+
+/***** HERO STYLING *****/
+
+#hero {
+	height: 630px;
+	background: url('../img/hero.jpg');
+	background-size: cover;
+    background-position: center;
 }
+
+#hero h2 {
+	font-size: 72px;
+	color: #E6E6E6;
+	margin: 0 auto;
+	padding: 40px;
+	text-shadow: rgba(0, 230, 230, 0.4) 8px -0.5px 0, rgba(230, 0, 115, 0.4) -8px 0.5px 0;
+}
+
+#hero h2 span {
+	color: #FFFFFF;
+	text-shadow: rgba(0, 230, 230, 0.4) 8px 0.5px 0, rgba(230, 0, 115, 0.4) -8px -0.5px 0;
+	
+}
+
 
 /***** ABOUT STYLING *****/
 
-#about .full-width {
-	padding: 80px 0;
+#about {
+	padding: 18px 18px 18px 30px;
+	background: #f2f2f2;
+	overflow: auto;
 }
 
 #about h2 {
-	font-family: 'Lora', serif;
-	font-size: 36;
-	padding-left: 50px;
+	font-size: 48px;
+	padding: 0 0 30px 0;
+	margin: 0 auto;
+	text-shadow: rgba(0, 230, 230, 0.4) 4px 0 0, rgba(230, 0, 115, 0.4) 12px 0 0;
 }
 
 #about p {
-	font-size: 21;
-	color: #7f7f7f;
-	line-height: 40px;
-	padding-left: 50px;
-	padding-right: 50px;
+	font-size: 32px;
+	padding: 0 100px 0 0;
+	line-height: 50px;
 }
+
+#about .full-width {
+    padding: 15px 0;
+}
+
+#about img {
+	width: 250px;
+}
+
+#about #img-front {
+	position: relative;
+}
+
+#about #img-middle-1 {
+	position: absolute;
+	float: left;
+	padding-left: 83px;
+	opacity: 0.8;
+}
+
+#about #img-middle-2 {
+	position: absolute;
+	float: left;
+	padding-left: 166px;
+	opacity: 0.6;
+}
+
+#about #img-middle-3 {
+	position: absolute;
+	float: left;
+	padding-left: 249px;
+	opacity: 0.4;
+}
+
+#about #img-back {
+	position: absolute;
+	float: left;
+	padding-left: 332px;
+	opacity: 0.2;
+}
+
+
+#about #about-image {
+
+}
+
 
 /***** WORK STYLING *****/
 
 #work {
-	background: #f9ceb7;
-	text-align: center;
+	overflow: auto;
+	padding: 33px 0 75px 0;
+	background: #131313;
 }
 
-#work .full-width {
-    padding: 115px 0;
-}
- 
 #work img {
-    padding-bottom: 30px;
+	height: 350px;
+	margin-top: 75px;
+	box-shadow: rgba(230, 0, 115, 0.8) 30px -30px 0px;
+}
+
+
+#work h2 {
+	font-size: 48px;
+	color: #f2f2f2;
+	margin: 0 auto;
+	text-shadow: rgba(0, 230, 230, 0.4) 4px 0 0, rgba(230, 0, 115, 0.4) 12px 0 0;
 }
 
 #work h3 {
-    font-size: 24px;
-    line-height: 32px;
-    width: 190px;
-    margin: 0 auto;
+	font-size: 32px;
+	margin: 0 auto;
+	color: #f2f2f2;
+	padding-top: 75px;
 }
- 
+
+#work h4 {
+	font-size: 1.17em;
+	margin: 0 auto;
+	padding-top: 5px;
+	color: #f2f2f2;
+}
+
 #work p {
-    font-family: 'Lora', serif;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 0 50px;
+	font-size: 20px;
+	line-height: 28px;
+	margin: 0 auto;
+	color: #f2f2f2;
+	padding: 15px 0 0 0;
+	height: 275px;
+
 }
+
+#work #column-1 h3 {
+	text-align: right;
+	padding-right: 50px;
+	text-shadow: rgba(230, 0, 115, 0.4) -12px 0 0;
+}
+
+#work #column-1 h4 {
+	text-align: right;
+	padding-right: 50px;
+}
+
+#work #column-1 p {
+	text-align: right;
+	padding-right: 50px;
+}
+
+#work #column-2 h3 {
+	padding-left: 50px;
+	text-shadow: rgba(0, 230, 230, 0.4) 5px 0 0;
+}
+
+#work #column-2 h4 {
+	padding-left: 50px;
+}
+
+#work #column-2 p {
+	padding-left: 50px;
+}
+
+#work #column-2 img {
+	margin-left: 50px;
+	box-shadow: rgba(0, 230, 230, .8) -50px -50px 0px;
+}
+
+
 
 /***** CONTACT STYLING *****/
 
 #contact {
-	background: #ebebeb;
-}
-
-#contact .full-width {
-	padding: 110px 25px
-}
-
-#contact #contact-img {
-	margin-left: 25px;
-	border: 12px solid #ffffff;
-}
-
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
-    padding-left: 115px;
-}
-
-#contact #envelope {
-    padding: 0 10px 0 115px;
+	background: url('../img/neon-background.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 250px;
+	text-align: center;
+	color: #f2f2f2;
+	box-shadow:inset 0 0 0 2000px rgba(0, 0, 100, 0.4);
 }
 
 #contact h2 {
-    font-family: 'Lora', serif;
-    font-size: 36px;
-    line-height: 44px;
+	margin: 0 auto;
+	padding: 75px 0 25px 0;
 }
 
-#contact #email-header{
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 44px;
-    margin: -30px 0 5px 0;
+#contact h3 {
+	margin: 0 auto;
 }
 
-#contact #socialmedia-header {
-    font-weight: bold;
-    font-size: 29px;
-    line-height: 44px;
-    margin: 40px 0 0 0;
+#contact h3 a {
+	text-decoration: none;
+	color: #f2f2f2;
 }
 
-#contact a {
-    text-decoration: none;
-    color: #c49075;
-    font-weight: bold;
-    font-size: 28px;
+#contact img {
+	width: 30px;
+	padding: 0 25px 0 25px;
 }
 
-#contact ul {
-    list-style: none;
+
+/***** FOOTER STYLING *****/
+
+footer {
+	background-color: #131313;
+	height: 65px;
 }
 
-#contact ul li {
-     display: inline-block;
+footer h4 {
+	margin: 0 auto;
+	text-align: center;
+	color: #f2f2f2;
+	padding: 23px 0 0 0;
+	text-shadow: rgba(0, 230, 230, 0.4) -4px 0 0;
 }
 
-#contact ul img {
-    font-size: 32px;
-    padding-right: 48px;
+footer h4 span {
+	text-shadow: rgba(230, 0, 115, 0.4) 4px 0 0
 }
+
+
+
+
